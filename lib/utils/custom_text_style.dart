@@ -21,6 +21,12 @@ class CustomTextTheme {
     fontWeight: FontWeight.w500,
   );
 
+  static const TextStyle headline4 = TextStyle(
+    fontFamily: _dmSansFontFamily,
+    fontSize: 20.0,
+    fontWeight: FontWeight.w500,
+  );
+
   static const TextStyle bodyText1 = TextStyle(
     fontFamily: _dmSansFontFamily,
     fontSize: 16.0,

@@ -10,3 +10,4 @@ const kSecondaryTextColor = Color(0xFF3787FF);
 
 const kHeadlineTextColor = Color(0xFF060302);
 const kHintTextColor = Color(0xFF060302);
+const kCaptionTextColor = Color(0xFF767372);

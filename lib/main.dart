@@ -1,5 +1,4 @@
-import 'package:e_learning/screens/loading_screen/loading_screen.dart';
-import 'package:e_learning/screens/splash_screen/splash_screen.dart';
+import 'package:e_learning/screens/sign_up_screen/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -13,11 +12,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
-      overlays: [
-        SystemUiOverlay.top,
-      ],
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
+      SystemUiOverlay.top
+    ] );
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        systemNavigationBarColor: Colors.transparent,
+        systemNavigationBarIconBrightness: Brightness.light,
+      ),
     );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'DMSans',
 
       ),
-      home: const SplashScreen(),
+      home: const SignUp(),
     );
   }
 }
