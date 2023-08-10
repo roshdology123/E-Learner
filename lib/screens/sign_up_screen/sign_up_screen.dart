@@ -1,4 +1,6 @@
+import 'package:e_learning/screens/sign_up_details_screen/sign_up_details_screen.dart';
 import 'package:e_learning/utils/const.dart';
+import 'package:e_learning/utils/custom_page_route.dart';
 import 'package:e_learning/utils/custom_text_style.dart';
 import 'package:e_learning/widgets/custom_ink_well.dart';
 import 'package:flutter/material.dart';
@@ -51,7 +53,10 @@ class SignUp extends StatelessWidget {
                 ],
               ),
             ),
-            CustomInkWell(onTap: () {}, text: 'Sign Up with Email',),
+            CustomInkWell(onTap: () {
+              Navigator.push(context, CustomPageRoute(page: const SignUpDetailsScreen()));
+
+            }, text: 'Sign Up with Email',),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: SizedBox(
@@ -77,7 +82,8 @@ class SignUp extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  CustomInkWell(onTap: () {}, text: 'Sign In',),
+                  CustomInkWell(onTap: () {
+                  }, text: 'Sign In',),
                 ],
               ),
             ),
