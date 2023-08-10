@@ -1,4 +1,7 @@
+import 'package:e_learning/screens/loading_screen/loading_screen.dart';
+import 'package:e_learning/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +13,20 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual,
+      overlays: [
+        SystemUiOverlay.top,
+      ],
+    );
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'E-Learner',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'DMSans',
+
       ),
-      home: const Placeholder(),
+      home: const SplashScreen(),
     );
   }
 }
