@@ -1,9 +1,11 @@
 import 'package:e_learning/screens/sign_up_details_screen/sign_up_details_screen.dart';
-import 'package:e_learning/utils/const.dart';
-import 'package:e_learning/utils/custom_page_route.dart';
-import 'package:e_learning/utils/custom_text_style.dart';
+
 import 'package:e_learning/widgets/custom_ink_well.dart';
 import 'package:flutter/material.dart';
+
+import '../../core/utils/const.dart';
+import '../../core/utils/custom_page_route.dart';
+import '../../core/utils/custom_text_style.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});

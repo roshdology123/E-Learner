@@ -1,5 +1,5 @@
-import 'package:e_learning/utils/const.dart';
-import 'package:e_learning/utils/custom_text_style.dart';
+import '../../core/utils/const.dart';
+import '../../core/utils/custom_text_style.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

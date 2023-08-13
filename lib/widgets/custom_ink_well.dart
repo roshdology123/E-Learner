@@ -1,5 +1,7 @@
-import 'package:e_learning/utils/custom_text_style.dart';
+
 import 'package:flutter/material.dart';
+
+import '../core/utils/custom_text_style.dart';
 
 class CustomInkWell extends StatelessWidget {
   const CustomInkWell({
