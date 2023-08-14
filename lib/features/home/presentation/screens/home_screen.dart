@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/utils/const.dart';
 import '../../../../core/utils/custom_text_style.dart';
+import '../widgets/circle_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -90,6 +91,7 @@ class HomeScreen extends StatelessWidget {
                         width: width,
                         height: height,
                         text: 'UI/UX Design',
+                        check: true,
                       ),
                     ),
                     Positioned.fill(
@@ -153,33 +155,6 @@ class HomeScreen extends StatelessWidget {
               )
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class CircleWidget extends StatelessWidget {
-  const CircleWidget(
-      {super.key,
-      required this.width,
-      required this.height,
-      required this.text});
-
-  final double width;
-  final double height;
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: CircleAvatar(
-        radius: height * 0.15,
-        backgroundColor: Colors.blue,
-        child: Text(
-          text,
-          style: CustomTextTheme.bodyText2,
         ),
       ),
     );
