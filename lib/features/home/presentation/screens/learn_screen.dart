@@ -1,4 +1,5 @@
 import 'package:e_learning/core/utils/utilities.dart';
+import 'package:e_learning/features/home/presentation/screens/level_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/const.dart';
@@ -58,6 +59,7 @@ class HomeScreen extends StatelessWidget {
                         width: width,
                         height: height,
                         text: 'UI/UX Design',
+                        function: () {},
                       ),
                     ),
                     Positioned.fill(
@@ -69,6 +71,7 @@ class HomeScreen extends StatelessWidget {
                         width: width,
                         height: height,
                         text: 'Programing',
+                        function: () {},
                       ),
                     ),
                     Positioned.fill(
@@ -80,6 +83,7 @@ class HomeScreen extends StatelessWidget {
                         width: width,
                         height: height,
                         text: 'Marketing',
+                        function: () {},
                       ),
                     ),
                     Positioned.fill(
@@ -92,6 +96,7 @@ class HomeScreen extends StatelessWidget {
                         height: height,
                         text: 'UI/UX Design',
                         check: true,
+                        function: () {},
                       ),
                     ),
                     Positioned.fill(
@@ -103,6 +108,7 @@ class HomeScreen extends StatelessWidget {
                         width: width,
                         height: height,
                         text: 'Development',
+                        function: () {},
                       ),
                     ),
                     Positioned.fill(
@@ -114,6 +120,7 @@ class HomeScreen extends StatelessWidget {
                         width: width,
                         height: height,
                         text: 'Graphics',
+                        function: () {},
                       ),
                     ),
                     Positioned.fill(
@@ -125,6 +132,7 @@ class HomeScreen extends StatelessWidget {
                         width: width,
                         height: height,
                         text: 'Graphics',
+                        function: () {},
                       ),
                     ),
                   ],
@@ -146,9 +154,16 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     CircleWidget(
-                      width: width * 0.7,
-                      height: height * 0.7,
+                      width: width *0.4,
+                      height: height *0.4 ,
                       text: 'Continue',
+                      function: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LevelScreen(),
+                            ));
+                      },
                     )
                   ],
                 ),

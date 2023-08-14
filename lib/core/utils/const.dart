@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//Colors
 const kMainColor = Color(0xffE4F1F8);
 const kSecondaryColor = Color(0xFF3787FF);
 const kWhiteColor = Color(0xFFFFFFFF);
@@ -13,3 +13,9 @@ const kHeadlineTextColor = Color(0xFF060302);
 const kHintTextColor = Color(0xFF060302);
 const kCaptionTextColor = Color(0xFF767372);
 
+//Images
+
+const String _baseImageUrl = 'assets/images/';
+class AppImages {
+  static const String kManImage = '${_baseImageUrl}man1.png';
+}

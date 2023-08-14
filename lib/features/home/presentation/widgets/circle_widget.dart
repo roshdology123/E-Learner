@@ -9,21 +9,22 @@ class CircleWidget extends StatelessWidget {
       required this.width,
       required this.height,
       required this.text,
-      this.check = false});
+      this.check = false,required this.function });
 
   final double width;
   final double height;
   final String text;
   bool check;
+  VoidCallback function;
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: Stack(
-        alignment: Alignment.topRight,
-        children: [
-          CircleAvatar(
+    return Stack(
+      alignment: Alignment.topRight,
+      children: [
+        GestureDetector(
+          onTap: function,
+          child: CircleAvatar(
             radius: height * 0.15,
             backgroundColor: Colors.blue,
             child: Text(
@@ -31,15 +32,15 @@ class CircleWidget extends StatelessWidget {
               style: CustomTextTheme.bodyText2,
             ),
           ),
-          check
-              ? CircleAvatar(
-                  radius: height * 0.018,
-                  backgroundColor: kOrangeColor,
-                  child: const Icon(Icons.check),
-                )
-              : const SizedBox()
-        ],
-      ),
+        ),
+        check
+            ? CircleAvatar(
+                radius: height * 0.018,
+                backgroundColor: kOrangeColor,
+                child: const Icon(Icons.check),
+              )
+            : const SizedBox()
+      ],
     );
   }
 }
