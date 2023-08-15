@@ -1,5 +1,6 @@
 import 'package:e_learning/features/home/presentation/screens/learn_screen.dart';
 import 'package:e_learning/screens/sign_up_screen/sign_up_screen.dart';
+import 'package:e_learning/screens/sign_up_details_screen/sign_up_details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'DMSans',
 
       ),
-      home: const HomeScreen(),
+      home: const SignUpDetailsScreen(),
     );
   }
 }
