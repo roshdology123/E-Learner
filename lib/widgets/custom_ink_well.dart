@@ -1,4 +1,5 @@
 
+import 'package:e_learning/core/utils/const.dart';
 import 'package:flutter/material.dart';
 
 import '../core/utils/custom_text_style.dart';
@@ -9,10 +10,14 @@ class CustomInkWell extends StatelessWidget {
     required this.text,
     this.imgPath = '',
     required this.onTap,
+    this.color = kWhiteColor,
+    this.textStyle = CustomTextTheme.headline4,
   });
   final String text;
   final String imgPath;
   final VoidCallback onTap;
+  final Color color;
+  final TextStyle textStyle;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -22,7 +27,7 @@ class CustomInkWell extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.9,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(40),
-          color: Colors.white,
+          color: color,
         ),
         alignment: Alignment.center,
         child: Row(
@@ -31,7 +36,7 @@ class CustomInkWell extends StatelessWidget {
             imgPath != '' ? Image.asset(imgPath): const SizedBox(),
             Text(
               text,
-              style: CustomTextTheme.headline3,
+              style: textStyle,
             ),
             const SizedBox()
           ],
