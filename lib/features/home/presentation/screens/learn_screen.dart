@@ -6,8 +6,8 @@ import '../../../../core/utils/const.dart';
 import '../../../../core/utils/custom_text_style.dart';
 import '../widgets/circle_widget.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class LearnScreen extends StatelessWidget {
+  const LearnScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -154,8 +154,8 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     CircleWidget(
-                      width: width *0.4,
-                      height: height *0.4 ,
+                      width: width * 0.4,
+                      height: height * 0.4,
                       text: 'Continue',
                       function: () {
                         Navigator.push(
