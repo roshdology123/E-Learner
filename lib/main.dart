@@ -1,6 +1,4 @@
-import 'package:e_learning/features/home/presentation/screens/learn_screen.dart';
-import 'package:e_learning/screens/sign_up_screen/sign_up_screen.dart';
-import 'package:e_learning/screens/sign_up_details_screen/sign_up_details_screen.dart';
+import 'package:e_learning/screens/sign_in_page/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -14,14 +12,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky, overlays: [
       SystemUiOverlay.top
     ] );
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
         systemNavigationBarColor: Colors.transparent,
-        systemNavigationBarIconBrightness: Brightness.light,
+        systemNavigationBarIconBrightness: Brightness.dark,
       ),
     );
     return MaterialApp(
@@ -31,7 +28,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'DMSans',
 
       ),
-      home: const SignUpDetailsScreen(),
+      home: const SignInScreen(),
     );
   }
 }

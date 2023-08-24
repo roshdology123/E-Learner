@@ -99,7 +99,8 @@ class _SignUpDetailsScreenState extends State<SignUpDetailsScreen> {
                               },
                               placeHolder: 'Password',
                               textEditingController:
-                                  passwordController),
+                                  passwordController,
+                          ),
                         ),
                         Padding(
                           padding: EdgeInsets.only(bottom: height * 0.12),
