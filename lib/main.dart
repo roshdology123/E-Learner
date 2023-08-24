@@ -1,4 +1,3 @@
-import 'package:e_learning/screens/sign_up_details_screen/sign_up_details_screen.dart';
 import 'package:e_learning/screens/sign_in_page/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
